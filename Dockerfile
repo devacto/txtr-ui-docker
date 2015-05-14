@@ -15,8 +15,8 @@ EXPOSE 9000
 VOLUME /app
 
 # Set instructions on build
-ONBUILD RUN npm install
-ONBUILD RUN bower install --allow-root
+RUN npm install
+RUN bower install --allow-root
 
 # Set working directory
 WORKDIR /app
