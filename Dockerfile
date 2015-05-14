@@ -20,4 +20,4 @@ WORKDIR /app
 # Set instructions on build
 # The following two instructions have to be executed in the /app directory
 ONBUILD RUN npm install
-ONBUILD RUN bower install --allow-root
+ONBUILD RUN bower install --allow-root --config.interactive=false
