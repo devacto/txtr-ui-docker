@@ -8,6 +8,9 @@ ONBUILD RUN apt-get update && \
             apt-get clean && \
             rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
+# Expose port
+EXPOSE 9000
+
 # Mount volume
 VOLUME /app
 
